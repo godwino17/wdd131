@@ -29,14 +29,13 @@ nav {
     text-align: center;
 }
 
-nav div {
+nav a {
     /* New  css declaration that i have learnt to make 
     this makes the flex box item to grow $ shrink
     to fill parent container with equal parts */
-    flex: 1 1 0;
-}
-
-nav a {
+    flex: 1 1 auto;
+    
+    display: block;
     color: white;
     text-decoration: none;
 }
