@@ -1,77 +1,67 @@
-<!-- Saturday, May-02-2026 -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Godwin Inyang | WDD 130</title>
-    <meta name="description" content="This is my personal homepage for practicing Web designing">
+    <title>WDD 131 Dynamic Web Fundamentals - Godwin Inyang</title>
     <meta name="author" content="Godwin Inyang">
-    <link rel="stylesheet" href="styles/styles.css">
+    <meta name="description"
+        content="This is the Personal Home page of Godwin Inyang for WDD 131 - Dynamic Web Fundamentals Course">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
+    <div class="container">
+        <header>
+            <span id="course-title">WDD 131 - Dynamic Web  Fundamentals</span>
+            <nav aria-label="Main-navigation">
+                <a href="https://linkedin.com/in/godwin-inyang531">LinkedIn</a>
+                <a href="https://byupw.instructure.com/">E-Learn</a>
+                <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&1d=p7#p7">Scripture</a>
+                <a href="#">Final Project</a>
+            </nav>
+        </header>
 
-    <header>
-        <nav>
-            <a href="#">Home</a>
-            <a href="wwr/">Rafting Website</a>
-            <a href="https://www.linkedin.com/in/godwin-inyang531" target="_blank">My Linkedin
-                Profile</a>
-            <a href="https://www.facebook.com/godwin.inyang.5030" target="_blank">My Facebook
-                Profile</a>
-        </nav>
-    </header>
-
-    <div class="grid">
         <main>
-            <h1>Godwin Inyang | WDD 130</h1>
-            <img src="images/profile.jpg" alt="Godwin Inyang" width="200">
-            <p>Hi 👋🏼, I'm Godwin Inyang, a passionate web designer in the making 🚀. I'm currently
-                perfecting my skills in web design, learning to craft visually stunning and user
-                friendly websites. With a keen
-                eye for detail and love for creativity, I'm excited to bring your digital vision to
-                life. When I'm not designing, you'll likely find me playing or watching football ⚽ -
-                it's my
-                go-to hobby! Let create something amazing together! :::: Placeholder content ::::
-                hsgsvbdggsbbshhzbhh dhhgdggdgdgd jhhjdsghhhhhhhhhhhhhh vvggggfhghgfhfgfggfgfgf
-                gvghhghggvhghghggghghg gyyggygyggygyg
-            </p>
-            <ul class="box indent">
-                <li><a href="https://www.churchofjesuschrist.org/temples/details/uyo-nigeria-temple?lang=eng"
-                        target="_blank">Uyo Nigeria Temple of The Church Of Jesus Christ Of Latter-Day
-                        Saints</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/temples/details/benin-city-nigeria-temple?lang=eng"
-                        target="_blank">Benin City Nigeria Temple Of The Church of Jesus Christ Of
-                        Latter-Day Saints</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/temples/details/aba-nigeria-temple?lang=eng"
-                        target="_blank">Aba Nigeria Temple of The Church Of Jesus Christ Of Latter-Day
-                        Saints</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/temples/details/abuja-nigeria-temple?lang=eng"
-                        target="_blank">Abuja Nigeria Temple of The Church Of Jesus Christ Of
-                        Latter-Day
-                        Saints</a></li>
-            </ul>
+            <h1>Godwin Inyang</h1>
+            <div class="sections">
+                <section class="card one">
+                    <h2>About Me</h2>
+                    <img id="myself" src="images/my-photo.jpg" alt="A photo of myself" width="150px">
+                    <p class="para">My name is Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam recusandae qui beatae ea dolorum sapiente molestiae voluptatum. Tempore nobis eligendi eos odio accusantium cumque, rerum, porro ex nulla voluptate quae!</p>
+                    <h3>Akwa Ibom State, Nigeria</h3>
+                    <div class="box">
+                        <figure>
+                            <img src="images/nigerian-flag.jpg" alt="Nigerian flag">
+                            <figcaption>Flag of Nigeria</figcaption>
+                        </figure>
+                        <p class="akwa">Akwa Ibom State is Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis ut repellat iusto explicabo
+                            asperiores quis, officiis consectetur aperiam in praesentium magni fugiat quam a nam modi alias, animi, mollitia
+                            aut?</p>
+                    </div>
+                </section>
+            </div>
 
+            <section class="card two">
+                <h2>Web Dev Resources</h2>
+                <ul>
+                    <li><a href="https://www.github.com">Github</a></li>
+                    <li><a href="https://www.w3school.com">W3 School</a></li>
+                    <li><a href="https://www.css-tricks.com">CSS Tricks</a></li>
+                    <li><a href="https://www,.developer.mozilla.org">MDN Web Doc</a></li>
+                    <li><a href="https://www.udemy.com">Udemy</a></li>
+                    <li><a href="https://www.stackoverflow.com">Stackoverflow</a></li>
+                </ul>
+            </section>
         </main>
 
-        <aside class="box">
-            <h2>Akwa Ibom State, Nigeria</h2>
-            <img src="images/uyo-city-small.jpg" alt="A picture of Uyo city">
-            <p>This is a picture of my city, Uyo. Uyo is the capital of Akwa Ibom State in Nigeria.
-                Ibom Plaza is the central hub for shopping, dinning and entertainment. Ibom
-                Tropicana
-                entertainment center is the popular spot for leisure and recreation. Uyo is the
-                major
-                oil producing area, with a strong focus on agriculture, trade and
-                education.</p>
-        </aside>
+        <footer>
+            <p>©️<span id="currentyear"></span> 🎈 By Godwin Inyang 🎈 Akwa Ibom State</p>
+            <p id="lastmodified"></p>
+        </footer>
     </div>
-
-    <footer>
-        <p>©️2016 || Godwin Inyang || Akwa Ibom State</p>
-    </footer>
 </body>
 
 </html>
