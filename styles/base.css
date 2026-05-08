@@ -29,6 +29,7 @@ header{
 nav{
     display: flex;
     background-color: #444444;
+    color: #ffffff;
 }
 
 nav a{
