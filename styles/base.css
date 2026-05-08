@@ -18,7 +18,6 @@
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    font-variation-settings: "width" 100;
     font-size: 1.5rem;
 }
 
@@ -29,7 +28,7 @@ header{
 
 nav{
     display: flex;
-    background-color: darkgreen;
+    background-color: #444444;
 }
 
 nav a{
@@ -38,7 +37,7 @@ nav a{
     text-align: center;
     text-decoration: none;
     color: #ffffff;
-    /* font-size: 1.2rem; */
+    font-size: 1.3rem;
 }
 nav a:hover{
     border: 1px solid blue;
@@ -60,9 +59,9 @@ h1{
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    font-variation-settings: "width" 100;
     margin: 5px 0;
 }
+
 h2{
     font-family:  Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.3rem;
