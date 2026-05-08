@@ -28,8 +28,7 @@ header{
 
 nav{
     display: flex;
-    background-color: #444444;
-    color: #ffffff;
+    background-color: yellow;
 }
 
 nav a{
@@ -37,12 +36,12 @@ nav a{
     flex: 1 1 100%;
     text-align: center;
     text-decoration: none;
-    color: #ffffff;
+    color: black;
     font-size: 1.3rem;
 }
 nav a:hover{
-    border: 1px solid blue;
-    background-color: #334155;
+    border: 2px solid blue;
+    background-color: #ffffff;
 }
 
 main{
