@@ -5,6 +5,7 @@
 }
 
 body {
+    width: 31.25rem;
     font-family: "Noto Sans", sans-serif;
     background-color: rgba(0, 0, 0, 0.11);
 }
@@ -77,8 +78,8 @@ a:hover {
 }
 
 main {
-    width: 30.25rem;
-    margin: 0 auto;
+    width: 30rem;
+    margin: .5rem auto;
 }
 
 h1 {
