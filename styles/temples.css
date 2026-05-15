@@ -14,14 +14,14 @@ header {
     margin: .5rem;
     padding: .5rem;
     display: grid;
-    grid-template-columns: 1.5fr .5fr;
+    grid-template-columns: 1.8fr .2fr;
     background-color: purple;
     color: white;
 }
 
 .title {
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 700;
     padding: 5px 0 0 5px;
 }
@@ -96,6 +96,7 @@ figure {
 
 figure img {
     margin-bottom: 5px;
+    border-radius: 50%;
 }
 
 footer {
