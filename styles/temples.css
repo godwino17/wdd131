@@ -26,7 +26,7 @@ header {
     padding: 5px 0 0 5px;
 }
 
-.navigation {
+nav {
     grid-column: 1/3;
     display: flex;
     flex-direction: column;
