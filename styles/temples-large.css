@@ -1,11 +1,16 @@
-@media  screen and (min-width: 509px) {
+@media  screen and (min-width: 500px) {
     #menu {
             display: none;
         }
 
+    header {
+        display: grid;
+        grid-template-columns: .8fr 1.2fr;
+    }
+
     .title {
         text-align: left;
-        padding-left: 2rem;
+        padding-left: 3rem;
     }
 
     .navigation {
@@ -13,7 +18,7 @@
         flex-direction: row;
         grid-column: 2/3;
         background-color: purple;
-        padding-top: 5px;
+        padding: 5px 0;
     }
 
     a {
@@ -21,16 +26,13 @@
         flex: 1 1 100%;
         border: none;
         font-weight: 700;
+        text-align: center;
     }
 
     a:hover {
-        background-color: aquamarine;
+        background-color: white;
         font-weight: 500;
-        border: 1px solid black;
-    }
-
-    main {
-        width: 90%;
+        border: 1px solid purple;
     }
 
     .container {
