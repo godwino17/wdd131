@@ -1,0 +1,149 @@
+:root {
+    --main-bc-color: darkgreen;
+    --secondary-bc-color: green;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: .2rem;
+}
+
+h1, footer {
+    background-color: var(--main-bc-color);
+    color: white;
+    text-align: center;
+    padding: .5rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    padding: .5rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+}
+
+.data {
+    border-bottom: 1px solid green;
+    padding-bottom: 20px;
+}
+
+.weather {
+    padding: 20px 0 20px;
+}
+
+.weather div {
+    margin-bottom: 15px;
+}
+
+section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: .5rem;
+    background-color: rgba(0, 128, 0, 0.63);
+}
+
+.image {
+    background-color: var(--secondary-bc-color);
+}
+
+.area, .popu, .cap, .lang, .curren, .tz, .cc, .int, .temp, .con, .wind, .windc {
+    font-weight: 700;
+    text-align: right;
+}
+
+.info, #calWindChill {
+    text-align: left;
+}
+
+.data p, .weather p {
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    gap: 5px;
+}
+
+.icon::before {
+    content: "";
+}
+
+
+@media screen and (min-width: 500px) {
+    main {
+        position: relative;
+    }
+
+    .data {
+        width: 230px;
+        position: absolute;
+        top: 90px;
+        margin-left: 10px;
+        background-color: rgba(255, 255, 255, 0.753);
+        padding: 7px;
+    }
+
+    .weather {
+        width: 200px;
+        position: absolute;
+        bottom: 30px;
+        right: 10px;
+        background-color: rgba(255, 255, 255, 0.753);
+        padding: 7px;
+    }
+
+    .weather div {
+        display: grid;
+        grid-template-columns: 120px 80px;
+        text-align: left;
+        background-color: var(--secondary-bc-color);
+        margin: 5px 0 10px -13px;
+        height: 48px;
+        padding: 5px;
+        width: 170px;
+    }
+
+    .weather h2 {
+        color: white;
+        padding-top: 5px;
+    }
+
+    .icon img {
+        display: none;
+    }
+
+    .icon::before {
+        content: "⛅";
+        font-size: 1.5rem;
+    }
+
+    .data h2 {
+        background-color: var(--secondary-bc-color);
+        padding: 10px;
+        margin: 5px 0 15px -13px;
+        text-align: left;
+        width: 200px;
+        color: white;
+    }
+
+    .data p,
+    .weather p {
+        display: grid;
+        grid-template-columns: 100px auto;
+        gap: 5px;
+    }
+}

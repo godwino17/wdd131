@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Country Home Page - Nigeria</title>
+    <meta name="author" content="Godwin Inayng">
+    <meta name="description" content="Get the latest data and weather updates for Nigeria. View population, economy stats, and current weather conditions all in one place.">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Nigeria</h1>
+    
+        <div class="image">
+            <picture>
+                <source srcset="images/eagle-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/eagle-medium.webp" media="(min-width: 500px)">
+                <img src="images/eagle-small.webp" alt="Eagle standing on a tree branch" width="500" height="625">
+            </picture>
+        </div>
+    
+        <section class="data">
+            <h2>Data</h2>
+            <p><span class="area">Area:</span> <span class="info">923,768 sq km</span></p>
+            <p><span class="popu">Population:</span> <span class="info">242,431,841</span></p>
+            <p><span class="cap">Capital:</span> <span class="info">Abuja</span></p>
+            <p><span class="lang">Language:</span> <span class="info">English, Nigerian Pidgin, Hausa, Yoruba, Igbo,
+                    Ibibio</span></p>
+            <p><span class="curren">Currency:</span> <span class="info">Naira</span></p>
+            <p><span class="tz">Time Zone:</span> <span class="info">UTC+1</span></p>
+            <p><span class="cc">Calling Code:</span> <span class="info">+234</span></p>
+            <p><span class="int">Internet TLD:</span> <span class="info">.ng</span></p>
+        </section>
+    
+        <section class="weather">
+            <div>
+                <h2>Weather</h2>
+                <span class="icon">
+                    <img src="images/sun-fill.svg" alt="Weather icon">
+                </span>
+            </div>
+            <p><span class="temp">Temperature:</span> <span class="info">31 ℃</span></p>
+            <p><span class="con">Condition:</span> <span class="info">Partly Sunny</span></p>
+            <p><span class="wind">Wind:</span> <span class="info">5 km/h</span></p>
+            <p><span class="windc">Wind Chill:</span> <span id="calWindChill"></span></p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>©<span id="year"></span> 🎈 By Godwin Inyang 🎈 Nigeria</p>
+        <p id="lastupdated"></p>
+    </footer>
+</body>
+</html>
