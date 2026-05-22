@@ -88,6 +88,11 @@ section {
         position: relative;
     }
 
+    h1:hover {
+        color: var(--main-bc-color);
+        background-color: white;
+    }
+
     .data {
         width: 230px;
         position: absolute;
@@ -126,7 +131,7 @@ section {
         display: none;
     }
 
-    .icon::before {
+    .icon::after {
         content: "⛅";
         font-size: 1.5rem;
     }
