@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: serif;
+}
+
+body {
+    padding: 5%;
+}
+
+table {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    text-align: center;
+    position: relative;
+}
+
+thead {
+    background-color: black;
+    color: white;
+}
+
+th, td {
+    padding: 10px 15px;
+    border: 1px solid gray;
+}
+
+thead tr:nth-child(2) {
+    background-color: #333;
+}
+
+tbody tr:nth-child(even)  {
+    background-color: rgba(189, 183, 183, 0.425);
+}
+
+.blank {
+    background-color: black;
+}
+
+
+caption {
+    caption-side: bottom;
+    padding: 10px;
+}
