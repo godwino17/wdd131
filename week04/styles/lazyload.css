@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+    /* background-color: black; */
+}
+
+img {
+    display: block;
+    margin: 1rem auto;
+    background: black;
+    animation: fade 15s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    img {
+            width: 100%;
+            height: auto;
+        }
+}
