@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    font-family: sans-serif;
+    font-size: smaller;
+    font-weight: 600;
+}
+
+h1, footer {
+    background-color: #1e1b4b;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+}
+
+.revf {
+    background-color: #fdfbf7;
+    margin: .5rem 0;
+    padding: 1rem;
+    border-radius: 3px;
+}
+
+select {
+    margin-top: 3px;
+}
+
+.rating, .checkboxes {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.radio {
+    display: grid;
+    grid-template-columns: .4fr .6fr .8fr 1fr 1fr;
+    align-items: center;
+    margin-top: 3px;
+}
+
+input[type="radio"] {
+    display: block;
+}
+
+.one {
+    padding-left: 3px;
+    font-style: normal;
+}
+
+#two {
+    margin-left: 4px;
+}
+
+#three {
+    margin-left: 15px;
+}
+
+#four {
+    margin-left: 20px;
+}
+
+#five {
+    margin-left: 28px;
+}
+
+.ita, span {
+    font-style: italic;
+    margin: 3px 0;
+}
+
+.revf .optional {
+    color: rgba(0, 0, 139, 0.815);
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.check {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+select, 
+input[type="date"], 
+textarea, 
+input[type="text"] {
+    display: block;
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 1rem;
+    margin-top: 3px;
+}
+
+.check label {
+    width: fit-content;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+}
+
+input[type="submit"] {
+    padding: 8px;
+    width: 98%;
+    margin: 0 1%;
+    font-size: large;
+    font-weight: 700;
+}
+
+select:required,
+.radio:has(input[type="radio"]:required:invalid),
+input[type="date"]:required {
+    background-color: rgba(247, 7, 7, 0.192);
+}
+
+select:required:valid,
+.radio:has(input[type="radio"]:required:valid),
+input[type="date"]:required:valid {
+    background-color: rgba(0, 128, 0, 0.445);
+}
+
+
+footer p {
+    padding: 5px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.thanks {
+    text-align: center;
+    padding: 10px;
+    font-size: larger;
+    font-weight: 700;
+}
+
+header,
+main,
+footer {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #bebce0;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Reviews</title>
+    <meta name="author" content="Godwin Inyang">
+    <meta name="description" content="Read our comprehensive product review page. We break down the key features, real-world performance, pros, cons, and verdict to help you decide.">
+
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        
+        
+        <form class="revf" method="get" action="review.html">
+            <label>Product Name
+                <select name="product" required>
+                    <option selected disabled value="">Choose a Product...</option>
+                </select>
+            </label>
+
+            <div class="rating">
+                <div>Overall Rating</div>
+                <div class="radio">
+                    <label><span class="one">&star;</span><input type="radio" id="one" name="star" value="1" required></label>
+                    <label>&star; &star;<input type="radio" id="two" name="star" value="2"></label>
+                    <label>&star; &star; &star;<input type="radio" id="three" name="star" value="3"></label>
+                    <label>&star; &star; &star; &star;<input type="radio" id="four" name="star" value="4"></label>
+                    <label>&star; &star; &star; &star; &star;<input type="radio" id="five" name="star" value="5"></label>
+                </div>
+            </div>
+
+            <div class="date"><label>Date of Installation <input type="date" name="date" required></label></div>
+
+            
+            <div class="checkboxes">
+                <div>Which features did you find useful in the product?</div>
+                <div class="ita">(Check all that apply)</div>
+                <div class="check">
+                    <label><input type="checkbox" name="check" value="durable">Durability</label>
+                    <label><input type="checkbox" name="check" value="ease">Ease of Use</label>
+                    <label><input type="checkbox" name="check" value="performance">Performance</label>
+                    <label><input type="checkbox" name="check" value="design">Design</label>
+                </div>
+            </div>
+
+            <div>
+                <label>Written Review <span class="optional">(Optional)</span><textarea name="review"></textarea> </label>
+            </div>
+
+            <div>
+                <label>Your Name <span class="optional">(Optional) <input type="text" name="fullname" placeholder="e.g Godwin Inyang"></span></label>
+            </div>
+
+                <!-- Submit Button -->
+             <input id="submit" type="submit" value="Post Review">
+
+        </form>
+    </main>
+
+    <footer>
+        <p>©<span id="year"></span> 🎈 By Godwin Inyang 🧍🏼‍♂️🎈 Nigeria</p>
+        <p id="lastupdated"></p>
+    </footer></body>
+</html>
