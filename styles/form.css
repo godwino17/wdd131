@@ -112,6 +112,12 @@ input[type="submit"] {
     margin: 0 1%;
     font-size: large;
     font-weight: 700;
+    background-color: rgb(24, 24, 197);
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background-color: darkblue;
 }
 
 select:required,
@@ -149,4 +155,10 @@ footer {
 
 body {
     background-color: #bebce0;
+}
+
+@media screen and (min-width: 700px) {
+    body {
+        background-color: #32304ba2;
+    }
 }

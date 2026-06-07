@@ -54,23 +54,10 @@ for (product of products) {
 }
 
 
-
 const reviewPage = document.querySelector("#reviewPage"); // This is the Review page as a whole
-let submitBtn = document.querySelector("#submit"); // Button in the form page.
-
-if (submitBtn) {
-    submitBtn.addEventListener("click", () => {
-        console.log("Button Clicked");
-    })
-}
-
 
 if (reviewPage) {
     let numberOfReview = JSON.parse(localStorage.getItem("numberOfReview")) || 0;
     numberOfReview++;
     localStorage.setItem("numberOfReview", JSON.stringify(numberOfReview));
 }
-
-
-
-

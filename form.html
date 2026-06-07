@@ -19,8 +19,8 @@
         
         <form class="revf" method="get" action="review.html">
             <label>Product Name
-                <select name="product" required>
-                    <option selected disabled value="">Choose a Product...</option>
+                <select id="selectproduct" name="product" required>
+                    <option selected disabled value="">Select a Product...</option>
                 </select>
             </label>
 
@@ -28,10 +28,10 @@
                 <div>Overall Rating</div>
                 <div class="radio">
                     <label><span class="one">&star;</span><input type="radio" id="one" name="star" value="1" required></label>
-                    <label>&star; &star;<input type="radio" id="two" name="star" value="2"></label>
-                    <label>&star; &star; &star;<input type="radio" id="three" name="star" value="3"></label>
-                    <label>&star; &star; &star; &star;<input type="radio" id="four" name="star" value="4"></label>
-                    <label>&star; &star; &star; &star; &star;<input type="radio" id="five" name="star" value="5"></label>
+                    <label>&star; &star;<input type="radio" id="two" name="star" value="2"  required></label>
+                    <label>&star; &star; &star;<input type="radio" id="three" name="star" value="3"  required></label>
+                    <label>&star; &star; &star; &star;<input type="radio" id="four" name="star" value="4"  required></label>
+                    <label>&star; &star; &star; &star; &star;<input type="radio" id="five" name="star" value="5"  required></label>
                 </div>
             </div>
 
@@ -50,7 +50,7 @@
             </div>
 
             <div>
-                <label>Written Review <span class="optional">(Optional)</span><textarea name="review"></textarea> </label>
+                <label>Written Review <span class="optional">(Optional)</span><textarea id="review" name="review"></textarea> </label>
             </div>
 
             <div>
