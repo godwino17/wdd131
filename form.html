@@ -17,13 +17,11 @@
     <main>
         <form class="revf" method="get" action="review.html">
 
-            <label>Product Name
-                <select id="selectproduct" name="product" required>
-                    <option selected disabled value="">Select a Product...</option>
-                </select>
-            </label>
+            <label for="selectproduct">Product Name</label>
+            <select id="selectproduct" name="product" required>
+                <option selected disabled value="">Select a Product...</option>
+            </select>
         
-            
             <div class="rating">
                 <div>Overall Rating</div>
                 <div class="radio">
@@ -71,15 +69,13 @@
             </div>
         
             <div>
-                <label>Written Review <span class="optional">(Optional)</span>
-                    <textarea id="review" name="review"></textarea>
-                </label>
+                <label for="review">Written Review <span class="optional">(Optional)</span></label>
+                <textarea id="review" name="review"></textarea>
             </div>
         
             <div>
-                <label>Your Name <span class="optional">(Optional)</span>
-                    <input type="text" id="name" name="fullname" placeholder="e.g Godwin Inyang">
-                </label>
+                <label for="name">Your Name <span class="optional">(Optional)</span></label>
+                <input type="text" id="name" name="fullname" placeholder="e.g Godwin Inyang">
             </div>
         
             <!-- Submit Button -->
