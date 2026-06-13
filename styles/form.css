@@ -97,6 +97,9 @@ input[type="text"] {
 }
 
 .check label {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0.5rem;
     width: fit-content;
 }
 

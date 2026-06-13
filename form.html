@@ -15,52 +15,77 @@
         <h1>Product Review</h1>
     </header>
     <main>
-        
-        
         <form class="revf" method="get" action="review.html">
+
             <label>Product Name
                 <select id="selectproduct" name="product" required>
                     <option selected disabled value="">Select a Product...</option>
                 </select>
             </label>
-
+        
+            
             <div class="rating">
                 <div>Overall Rating</div>
                 <div class="radio">
-                    <label><span class="one">&star;</span><input type="radio" id="one" name="star" value="1" required></label>
-                    <label>&star; &star;<input type="radio" id="two" name="star" value="2"  required></label>
-                    <label>&star; &star; &star;<input type="radio" id="three" name="star" value="3"  required></label>
-                    <label>&star; &star; &star; &star;<input type="radio" id="four" name="star" value="4"  required></label>
-                    <label>&star; &star; &star; &star; &star;<input type="radio" id="five" name="star" value="5"  required></label>
+                    <label>&star;
+                        <input type="radio" id="one" name="star" value="1" required>
+                    </label>
+                    <label>&star; &star;
+                        <input type="radio" id="two" name="star" value="2" required>
+                    </label>
+                    <label>&star; &star; &star;
+                        <input type="radio" id="three" name="star" value="3" required>
+                    </label>
+                    <label>&star; &star; &star; &star;
+                        <input type="radio" id="four" name="star" value="4" required>
+                    </label>
+                    <label>&star; &star; &star; &star; &star;
+                        <input type="radio" id="five" name="star" value="5" required>
+                    </label>
                 </div>
             </div>
-
-            <div class="date"><label>Date of Installation <input id="date" type="date" name="date" required></label></div>
-
-            
+        
+            <div class="date">
+                <label>Date of Installation
+                    <input id="date" type="date" name="date" required>
+                </label>
+            </div>
+        
             <div class="checkboxes">
                 <div>Which features did you find useful in the product?</div>
                 <div class="ita">(Check all that apply)</div>
                 <div class="check">
-                    <label><input type="checkbox" name="check" id="durable" value="durable">Durability</label>
-                    <label><input type="checkbox" name="check" id="ease" value="ease">Ease of Use</label>
-                    <label><input type="checkbox" name="check" id="performannce" value="performance">Performance</label>
-                    <label><input type="checkbox" name="check" id="design" value="design">Design</label>
+                    <label>Durability
+                        <input type="checkbox" name="check" id="durable" value="durable">
+                    </label>
+                    <label>Ease of Use
+                        <input type="checkbox" name="check" id="ease" value="ease">
+                    </label>
+                    <label>Performance
+                        <input type="checkbox" name="check" id="performance" value="performance">
+                    </label>
+                    <label>Design
+                        <input type="checkbox" name="check" id="design" value="design">
+                    </label>
                 </div>
             </div>
-
+        
             <div>
-                <label>Written Review <span class="optional">(Optional)</span><textarea id="review" name="review"></textarea> </label>
+                <label>Written Review <span class="optional">(Optional)</span>
+                    <textarea id="review" name="review"></textarea>
+                </label>
             </div>
-
+        
             <div>
-                <label>Your Name <span class="optional">(Optional) <input type="text" id="name" name="fullname" placeholder="e.g Godwin Inyang"></span></label>
+                <label>Your Name <span class="optional">(Optional)</span>
+                    <input type="text" id="name" name="fullname" placeholder="e.g Godwin Inyang">
+                </label>
             </div>
-
-                <!-- Submit Button -->
-             <input id="submit" type="submit" value="Post Review">
-
+        
+            <!-- Submit Button -->
+            <input id="submit" type="submit" value="Post Review">
         </form>
+
     </main>
 
     <footer>
