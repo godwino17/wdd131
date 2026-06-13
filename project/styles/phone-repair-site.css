@@ -1,0 +1,656 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    background-color: black;
+    color: white;
+}
+
+header, .contacts, .services {
+    padding: 2rem 1.5rem;
+}
+
+.cnt {
+    display: grid;
+    grid-template-columns: auto 1fr auto
+}
+
+.cnt span {
+    width: 180px;
+    font-weight: 500;
+    padding-left: 3px;
+}
+
+/* -------------------------------------------------- */
+#menu {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+#menu::before {
+    content: "\2630"; /* Open icon */
+    color: white;
+}
+
+.nav-table .flex {
+    /* display: flex; */
+    display: none;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.nav-table nav, .nav-table div {
+    display: none;
+}
+
+.show nav, .show div {
+    display: block;
+}
+
+.show .flex {
+    display: flex;
+}
+
+#menu.show::before {
+    content: "\2716"; /* Close icon */
+    color: white;
+}
+
+.nav-table a {
+    display: block;
+    text-align: center;
+    padding: .5rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.849);
+}
+/* ------------------------------------------------ */
+
+.nav-table {
+    padding: 1rem 0;
+}
+
+nav a {
+    text-decoration: none
+}
+
+.small-text a {
+    font-weight: 300;
+    font-size: .9rem
+}
+
+.home .div1 {
+    padding: 2rem 1.5rem;
+}
+
+.home h1, .home .section h2, .abouts h1, .process h2, .abouts .vision h2, .abouts .faq h2{
+    font-size: medium;
+    font-weight: 700;
+    color: goldenrod;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.one p {
+    padding-bottom: .5rem;
+}
+
+.home .div1 .solid, .home .section .bold {
+    margin-bottom: 2rem;
+    font-size: 3.2rem;
+}
+
+.home .div1 .img img {
+    width: 100%;
+    margin: 3rem 0;
+}
+
+.home .div1 .img-p {
+    text-align: center;
+}
+
+.home .img-p img {
+    border-radius: 100%;
+    border: 5px solid rgba(255, 255, 255, 0.075);
+    display: block;
+    width: 30%;
+    margin: 0 auto 1rem auto;
+}
+
+.home .img-p p {
+    width: 70%;
+    margin: 1rem auto;
+}
+
+.home #bottom {
+    font-size: 1.2rem;
+    margin-top: 3rem;
+}
+
+.home #bottom a {
+    color: goldenrod;
+}
+
+
+.home .four {
+    margin: 0 0 5rem 0;
+    padding: 0 1.5rem;
+    position: relative;
+}
+
+.home .four img {
+    width: 100%;
+}
+
+.home .section {
+    padding: 0 1.5rem;
+}
+
+.home .section .bold {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.home .section section {
+    margin-top: 4rem;
+}
+
+.home .section h3 {
+    margin-bottom: 1rem;
+}
+
+.home .section p {
+    color: rgba(255, 255, 255, 0.726);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.582);
+}
+
+footer p {
+    padding: .5rem;
+}
+
+/* About us page */
+.abouts {
+    padding: 2rem 1.5rem;
+}
+
+.abouts .big, .process .para1, .vision .para1, .faq .para1, .cntainer .block {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.abouts .div1 p {
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.726);
+}
+
+.abouts .div1 img {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.abouts .div2 {
+    margin: 4rem 0;
+}
+
+.abouts .div2 img {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.abouts .div2 p {
+    padding-bottom: 1.5rem;
+}
+
+.process h2, .process .para1, .process .para2, .faq h2, .faq .para1, .faq .para2 {
+    text-align: center;
+}
+
+.process .para2, .vision .para2, .faq .para2 {
+    font-weight: 700;
+    padding-bottom: 2rem;
+}
+
+.process section {
+    background-color: rgb(20, 19, 19);
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+.process span {
+    display: block;
+    color: goldenrod;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+.process h3 {
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.process p {
+    color: rgba(255, 255, 255, 0.726);
+}
+
+.abouts .mission {
+    margin: 3rem 0;
+}
+
+.mission img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding-bottom: 3rem;
+}
+
+.vision h2 {
+    padding-bottom: 1rem;
+}
+
+.vision section {
+    margin-bottom: 1.5rem;
+}
+
+.vision h3 {
+    padding-bottom: 1.5rem;
+}
+
+.vision section p {
+    color: rgba(255, 255, 255, 0.726);
+}
+
+.vision a {
+    background-color: goldenrod;
+    color: black;
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+    width: fit-content;
+    margin: 3.5rem 0;
+}
+
+.vision a:hover {
+    background-color: rgba(189, 147, 42, 0.788);
+    color: whitesmoke;
+}
+
+.faq div {
+    margin-top: 2rem;
+}
+
+details {
+    padding: 1rem 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.527);
+}
+
+details p {
+    padding: 1rem 0;
+    color: rgba(255, 255, 255, 0.685);
+    font-size: medium;
+}
+
+.cntainer h1, .cntainer h2 {
+    font-size: small;
+    font-weight: 700;
+    color: goldenrod;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.cntainer h2 {
+    font-size: medium;
+    padding-bottom: 1rem;
+}
+
+.cntainer .style {
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.cntainer p {
+    color: rgba(255, 255, 255, 0.685);
+    padding-bottom: 5px;
+}
+
+.cntainer .block, .cntainer .style {
+    color: white;
+}
+
+.cntainer {
+    margin: 1rem 0;
+}
+
+form {
+    margin-top: 3rem;
+}
+
+form h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+form p {
+    text-align: left;
+    color: rgba(255, 255, 255, 0.685);
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+.form-field {
+    background-color: rgb(20, 19, 19);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+form input,
+form textarea {
+    display: block;
+    padding: .5rem;
+    width: 100%;
+    background-color: black;
+    color: white;
+    margin-top: 2px;
+    font-size: large;
+    font-weight: 500;
+}
+
+.form-field label {
+    padding-left: 5px;
+}
+
+input[type="submit"] {
+    margin-top: 4rem;
+    padding: .8rem;
+    background-color: goldenrod;
+    font-weight: 700;
+    font-size: large;
+    color: rgb(26, 24, 24);
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(185, 133, 0);
+    color: rgba(255, 255, 255, 0.795);
+}
+
+.services h1 {
+    font-size: large;
+    font-weight: 700;
+    color: goldenrod;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.services p {
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.p1 {
+    font-size: 2.5rem;
+}
+
+.p2 {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.685);
+}
+
+.services div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+figure img {
+    width: 100%;
+    border: 5px solid rgba(255, 255, 255, 0.185);
+}
+
+figcaption p {
+    text-align: left;
+    color: rgba(255, 255, 255, 0.685);
+}
+
+figure h2 {
+    text-align: center;
+    padding: 1rem 0 1.5rem 0;
+    font-weight: 300;
+}
+
+@media screen and (min-width: 500px) {
+    #menu {
+        display: none;
+    }
+
+    header {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.582);
+    }
+
+    .cnt span {
+        font-size: 2.5rem;
+        font-style: italic;
+        font-weight: 500;
+        width: 100%;
+        padding-left: 3px;
+        color: goldenrod;
+    }
+
+    .nav-table {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+
+    .nav-table nav {
+        display: flex;
+        grid-column: 1/4;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    nav a {
+        font-weight: 500;
+        font-size: medium;
+        color: rgba(255, 255, 255, 0.726);
+    }
+
+    nav a:hover {
+        color: goldenrod;
+        border-bottom: 3px solid goldenrod;
+        padding-bottom: 3px;
+    }
+
+    .nav-table .small-text {
+        display: flex;
+        grid-column: 1/3;
+    }
+
+    .small-text a {
+        font-weight: 500;
+        flex: 1 1 100%;
+    }
+
+
+    .nav-table .flex {
+        display: flex;
+        grid-column: 3/4;
+    }
+
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 1rem;
+        padding: 1rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.582);
+    }
+    
+    footer p {
+        padding: .5rem;
+    }
+
+    footer div {
+        display: flex;
+    }
+
+    footer div p {
+        flex: 1 1 100%;
+    }
+
+    .home .div1 {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr .8fr;
+        gap: 1rem;
+        padding-top: 0;
+    }
+
+    .home .solid {
+        margin-bottom: 1rem;
+        font-size: 7rem;
+        font-weight: 500;
+        padding: 0 7rem 0 0;
+        line-height: 80px;
+    }
+
+    .home .img img {
+        display: block;
+        padding: 0 2rem;
+    }
+
+    .home .div1 .one {
+        padding-top: 4rem;
+    }
+
+    .home .img-p {
+        padding-top: 8rem;
+    }
+
+    .home  .img-p img {
+        width: 50%;
+    }
+
+    #bottom {
+        padding: 3rem 0;
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    .home .section {
+        margin: 4rem 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .home .section section {
+        margin: 0;
+    }
+
+    .group1 {
+        display: flex;
+        gap: 3rem;
+    }
+
+    .group1 .div2 {
+        margin: 0;
+    }
+
+    .group1 .div2 img {
+        width: 100%;
+    }
+
+    .process div {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .mission {
+        background-color: rgba(0, 0, 0, 0.123);
+        margin: 4rem 0;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .mission img {
+        width: 100%;
+        height: 750px;
+    }
+
+    .faq div {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+
+    .contacts h1 {
+        font-size: medium;
+    }
+
+    .cntainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    form {
+        margin: 0;
+    }
+
+    .form-field {
+        margin: 0;
+    }
+
+    input[type="submit"] {
+        margin: 0;
+    }
+
+    form p {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .sect {
+        margin-top: 3rem;
+    }
+
+    .cntainer .sect {
+        display: flex;
+        gap: 4rem;
+    }
+
+    .services div {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
